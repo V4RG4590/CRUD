@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #FFB900, #FF7730, #BD007F, #3500D3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colors 10s ease-in-out infinite;
+  }
+ 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Who R U?</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="TODO.css">
+</head>
+<body>
+  <div class="container">
+    <h1>WHO R U?</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add Student</h2>
+        <form id="add-student-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="color">Favorite Color</label>
+            <select class="form-control" id="color" name="color">
+              <option value="">Select a color</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Students List</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Favorite Color</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="students-list"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="TODO.js"></script>
+</body>
+</html>
